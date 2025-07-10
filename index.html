@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semantic Layout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: red;
+      padding: 30px;
+      color: white;
+      text-align: center;
+    }
+
+    main {
+      background-color: beige;
+      text-align: center;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    section.content-area {
+      background-color: aquamarine;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    article {
+      background-color: cadetblue;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 100%;
+      position: relative;
+    }
+
+    aside.left {
+      background-color: blue;
+      width: 30%;
+      height: 300px;
+    }
+
+    div.yellow-box {
+      background-color: yellow;
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      left: 30%;
+      top: 0;
+    }
+
+    div.green-box {
+      background-color: yellowgreen;
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    Header
+  </header>
+
+  <main>
+    Main Content
+  </main>
+
+  <section class="content-area">
+    <article>
+      <aside class="left"></aside>
+      <div class="yellow-box"></div>
+      <div class="green-box"></div>
+    </article>
+  </section>
+
+</body>
+</html>
